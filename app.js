@@ -13,7 +13,7 @@ const gameBoard = document.querySelector('.game-section')
 
 function restartGame() {
     if(confirm('Do you want to Restart Game ??')) {
-        window.location = '/';
+        window.location = '/snakeGame';
     }
 }
 
@@ -22,7 +22,7 @@ restrtBtn.addEventListener('click', restartGame);
 function main(currentTime) {
   if (gameOver) {
     if (confirm(`Your Score is ${score} . Press ok to restart.`)) {
-      window.location = '/'
+      window.location = '/snakeGame'
     }
     return
   }
